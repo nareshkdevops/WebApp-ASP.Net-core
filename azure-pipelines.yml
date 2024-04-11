@@ -26,9 +26,9 @@ stages:
         provider: 'azurerm'
         command: 'init'
         workingDirectory: '$(System.DefaultWorkingDirectory)/WebApp-ASP.Net core/terraform-manifests'
-        backendServiceArm: 'Free Trial(10)(21fb298c-8b2d-4d34-971a-9b99a2af713b)'
+        backendServiceArm: 'Free Trial(17df55b0-4b61-467c-abf3-41701cab0172)'
         backendAzureRmResourceGroupName: 'app-grp'
-        backendAzureRmStorageAccountName: 'narstorageacc01'
+        backendAzureRmStorageAccountName: 'narstorageacct01'
         backendAzureRmContainerName: 'data-container'
         backendAzureRmKey: 'terraform.tfstate'
 
