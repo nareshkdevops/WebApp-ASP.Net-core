@@ -47,7 +47,7 @@ stages:
         workingDirectory: '$(System.DefaultWorkingDirectory)/WebApp-ASP.Net core/terraform-manifests'
         customCommand: 'fmt'
         outputTo: 'console'
-        environmentServiceNameAzureRM: 'Free Trial (21fb298c-8b2d-4d34-971a-9b99a2af713b)'
+        environmentServiceNameAzureRM: 'Free Trial(17df55b0-4b61-467c-abf3-41701cab0172)'
     
     - task: TerraformTaskV4@4
       inputs:
@@ -55,7 +55,7 @@ stages:
         command: 'plan'
         workingDirectory: '$(System.DefaultWorkingDirectory)/WebApp-ASP.Net core/terraform-manifests'
         commandOptions: '-out=tfplan'
-        environmentServiceNameAzureRM: 'Free Trial (21fb298c-8b2d-4d34-971a-9b99a2af713b)'
+        environmentServiceNameAzureRM: 'Free Trial(17df55b0-4b61-467c-abf3-41701cab0172)'
     - task: CopyFiles@2
       displayName: Copy files
       inputs:
